@@ -33,7 +33,7 @@ Other details:
 Frequent Adoptadog customer- has adopted 6 dogs over the past 5 years
 Doesn't own a laptop and prefers using an iPad over an iPhone for most tasks
 
-## Compatible Devices and Browsers
+## Testing & Compatible Devices and Browsers
 The website has been tested with a variety of tools to check for validity and responsive design. Tools used include:
 _ HTML5 Validator for ensuring valid HTML
 _ Chrome Dev Tools for testing different viewport sizes
