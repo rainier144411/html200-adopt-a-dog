@@ -17,7 +17,6 @@ Occupation: Early career software developer
 Activities: Hiking, Geocaching
 
 Other details: 
-
 Owns an iPhone and an older laptop but spends most of her time on her phone
 Looking for a dog companion while working from home or to take hiking
 
@@ -31,20 +30,20 @@ Occupation: Retired doctor
 Activities: Playing the violin, volunteering
 
 Other details:
-
 Frequent Adoptadog customer- has adopted 6 dogs over the past 5 years
 Doesn't own a laptop and prefers using an iPad over an iPhone for most tasks
 
 ## Compatible Devices and Browsers
 The website has been tested with a variety of tools to check for validity and responsive design. Tools used include:
-HTML5 Validator for ensuring valid HTML
-Chrome Dev Tools for testing different viewport sizes
-Mac Book, iPhone, and Dell laptop for ensuring device compatability
+_ HTML5 Validator for ensuring valid HTML
+_ Chrome Dev Tools for testing different viewport sizes
+_ Mac Book, iPhone, and Dell laptop for ensuring device compatability
+_ [PageSpeed Insights](https://pagespeed.web.dev) for recommendations on improving site performance and user experience.
 
 The website has been testing on the following browsers:
-Safari & iOS Safari
-Chrome
-Firefox
+_ Safari & iOS Safari
+_ Chrome
+_ Firefox
 
 ## Changes Needed
 April 27 - CSS should be used to make images have responsive sizing, to include backgrounds for the header and footer to make them readable, and to display the dogs in a grid rather than a vertical list.
