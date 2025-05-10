@@ -51,27 +51,45 @@
 
                 <div class="city-state-zip">
                     <label>City
-                        <input type="text" name="applicantCity">
+                        <input type="text" name="applicantCity" class="city">
                     </label>
 
                     <label>State
-                        <input type="email" name="applicantState">
+                        <select name="applicantState">
+                            <option value=""></option>
+                            <option value="Washington">Washington</option>
+                            <option value="Oregon">Oregon</option>
+                            <option value="Idaho">Idaho</option>
+                        </select>
                     </label>
 
                     <label>Zip Code
-                        <input type="email" name="applicantZipCpde">
+                        <input type="text" name="applicantZipCpde">
                     </label>
                 </div>
 
-                <p>First Time Adopter?</p>
-                    <input type="radio" value="Yes" id="radio-button-option-1" name="applicantFirstTimeAdopter">
-                    <label for="radio-button-option-1">Yes</label>
-                    <input type="radio" value="No" id="radio-button-option-2" name="applicantFirstTimeAdopter">
-                    <label for="radio-button-option-2">No</label>
-                <br>
+                <fieldset>
+                    <legend>First Time Adopter?</legend>
+                    <label>
+                        <input type="radio" name="applicantFirstTimeAdopter" value="yes">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="applicantFirstTimeAdopter" value="no">
+                        No
+                    </label>
+                </fieldset>
+
+                <label>How many pets are in your home?
+                    <input type="number" name="applicantPetCount" min="0">
+                </label>
 
                 <label>Pickup Location
-                    <input type="text" name="applicantPickupLocation">
+                    <select name="applicantPickupLocation">
+                        <option value=""></option>
+                        <option value="West Seattle">West Seattle</option>
+                        <option value="Bellevue">Bellevue</option>
+                    </select>
                 </label>
 
                 <label>Dogs Adopted</label>
@@ -80,7 +98,7 @@
                 <p>Total Adoption Cost</p>
                     <p>$123.56</p>
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" id="checkout">
             </form>
 
         </section>
