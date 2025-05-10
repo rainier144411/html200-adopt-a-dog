@@ -1,3 +1,9 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    font-size:16px;
+}
+
 header {
     background: url("images/header-image.jpg"),rgb(12,60,99);
     background-size: cover;
@@ -21,9 +27,11 @@ header {
 }
 
 .checkout-button {
+    display: inline-block;
     background-color: rgb(131,180,66);
     color: white;
     text-decoration: none;
+    margin-top: 15px;
     padding: 3px 30px;
     border-radius: 3px;
 }
@@ -56,28 +64,32 @@ h2, h3 {
 
 .intro {
     display: flex;
-    column-gap: 2rem;
-    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 5rem;
 }
 
 .intro img {
-    max-height: 370px;
-    height: 100%;
-    width: auto;
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.intro article {
+    align-self: flex-start;
 }
 
 .dog-grid ul {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem;
     list-style: none;
+    margin-bottom: 30px;
 }
 
 .dog-grid li {
     max-width:200px;
     border: 1px solid lightgrey;
-
 }
 
 .dog-grid img {
@@ -85,11 +97,23 @@ h2, h3 {
     height: auto;
 }
 
-.see-more-dogs-button {
-    display: flex;
-    justify-content: center;
-    width: 20%;
-    min-width: 300px;
+.dog-grid h3, p, input {
+    margin: .5rem .5rem;
+}
+
+#see-more-dogs-button {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 10%;
+    min-width: 200px;
+    background-color: lightgray;
+    color: rgb(12,60,99);
+    font-weight: 700;
+    font-size: medium;
+    text-decoration: none;
 }
 
 footer {
@@ -133,29 +157,70 @@ footer nav ul a {
     width: 100%;
     min-width: 250px;
     height: auto;
+    align-self: flex-start;
 }
 
 .checkout-form {
-    display: block;
+    width: 30%;
 }
 
 input {
-    width: 50%;
+    width: 100%;
     display: block;
     color: black;
 }
 
 .city-state-zip {
     display: flex;
+    justify-content: space-between;
+    gap: 30px;
 }
 
-input[type=radio] {
+input[type=submit] {
+    width: 90%;
+    background-color: rgb(131,180,66);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: medium;
+    min-width: 150px;
+}
+
+input[type=number] {
+    width: 100px;
+}
+
+#checkout {
+    width: 20%;
+}
+
+select {
+    display: block;
+    margin: 8px;
+}
+
+.checkout-form label, legend, p {
+    color: rgb(12,60,99);
+    font-weight: 700;
+    font-size: small;
+}
+
+fieldset {
+    border: none;
+    margin-left:0;
+    padding-left:0;
+}
+
+fieldset label {
+    color: black;
+    font-weight: 400;
     display: inline;
     margin-right: 30px;
 }
 
-input[type=submit] {
-    width: 30%;
-    background-color: rgb(131,180,66);
-    color: white;
+fieldset input {
+    display: inline;
+    width: 20px;
+    margin-right: 0px;
 }
