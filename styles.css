@@ -200,7 +200,7 @@ select {
     margin: 8px;
 }
 
-.checkout-form label, legend, p {
+.checkout-form label, .check-form legend, .checkout-form p {
     color: rgb(12,60,99);
     font-weight: 700;
     font-size: small;
